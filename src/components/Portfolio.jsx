@@ -264,7 +264,7 @@ const Portfolio = () => {
             <ExperienceCard
               company="Persistent Systems"
               position="Frontend Intern"
-              period="May 2023 - July 2023"
+              period="June 2023 - July 2023"
               responsibilities={[
                 "Developed responsive UI components using React.js, JavaScript, HTML, and CSS.",
                 "Integrated third-party APIs to display real-time data, improving user engagement by 20%.",
@@ -276,7 +276,7 @@ const Portfolio = () => {
             <ExperienceCard
               company="Capabl"
               position="Frontend Intern"
-              period="Jan 2023 - Mar 2023"
+              period="Feb 2023 - Mar 2023"
               responsibilities={[
                 "Built reusable frontend components using React.js and Tailwind CSS.",
                 "Implemented user authentication and developed a responsive user dashboard.",
