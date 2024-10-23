@@ -20,45 +20,45 @@ import {
 } from "react-icons/fa";
 
 import Resume from "../assets/Akanksha_Vinchankar_Resume.pdf"; // Update with Akanksha's resume path
-import picofme from "../assets/picofme.jpg";
+import picofme from "../assets/picofme.png";
 import PokemonApp from "../assets/PokemonApp.png"; // Placeholder for project images
 import BananaSpeak from "../assets/BananaSpeak.png";
 
 const skillIcons = {
-    "React.js":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-    TypeScript:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
-    SCSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-    JavaScript:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-    "Redux Toolkit":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-    HTML: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-    CSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-    "Tailwind CSS":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
-    PostgreSQL:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-    Golang:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
-    Git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-    "RESTful APIs":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-    "Performance Optimization":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
-    "Responsive Design":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-    "VS Code":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-    JIRA: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
-    "LeetCode Profile":
-      "https://cdn.iconscout.com/icon/free/png-512/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png?f=webp&w=256",
-    Axios:
-      "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg",
-    "Context API":
-      "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-  };
+  "React.js":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+  TypeScript:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
+  SCSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
+  JavaScript:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+  "Redux Toolkit":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+  HTML: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+  CSS: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+  "Tailwind CSS":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
+  PostgreSQL:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+  Golang:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+  Git: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+  "RESTful APIs":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+  "Performance Optimization":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg",
+  "Responsive Design":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
+  "VS Code":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+  JIRA: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg",
+  "LeetCode Profile":
+    "https://cdn.iconscout.com/icon/free/png-512/free-leetcode-logo-icon-download-in-svg-png-gif-file-formats--technology-social-media-vol-4-pack-logos-icons-2944960.png?f=webp&w=256",
+  Axios:
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg",
+  "Context API":
+    "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+};
 
 const Portfolio = () => {
   const [theme, setTheme] = useState("light");
@@ -105,7 +105,7 @@ const Portfolio = () => {
         <header className="mb-16 bg-white dark:bg-gray-800 rounded-3xl shadow-2xl p-8 transition-all duration-300">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex flex-col md:flex-row items-center mb-6 md:mb-0">
-            <img
+              <img
                 src={picofme}
                 alt="Akanksha Vinchankar"
                 className="w-40 h-40 rounded-full border-4 border-indigo-500 shadow-lg mb-4 md:mb-0 md:mr-8 transition-transform duration-300 transform hover:scale-105"
@@ -176,8 +176,12 @@ const Portfolio = () => {
           </div>
         </header>
 
-        <Section title="About Me" icon={<FaUser className="mr-2" size={28} />}>
-          <p className="text-lg sm:text-xl text-gray-700 dark:text-gray-300 leading-relaxed">
+        <Section
+          title="About Me"
+          icon={<FaUser className="mr-2" size={28} />}
+          className="mb-16 bg-gradient-to-r from-purple-200 to-purple-400 dark:from-gray-800 dark:to-indigo-900 rounded-3xl shadow-2xl p-8 transition-all duration-300"
+        >
+          <p className="text-lg sm:text-xl text-black dark:text-gray-300 leading-relaxed">
             Fresher in Information Technology Engineering with skills in
             JavaScript, React.js, HTML, CSS, and APIs. Experienced in developing
             responsive web applications and eager to leverage my skills in a
@@ -247,7 +251,6 @@ const Portfolio = () => {
                   name: "VS Code",
                   logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
                 },
-                
               ]}
             />
           </div>
